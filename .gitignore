@@ -1,0 +1,9 @@
+.env
+__pycache__/
+*.pyc
+.venv/
+venv/
+civic_data/*.csv
+dist/
+build/
+*.egg-info/
