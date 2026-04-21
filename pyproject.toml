@@ -38,3 +38,9 @@ all   = ["civic-agent-kit[mcp,a2a,agents,rag]"]
 Homepage = "https://github.com/gabrielmahia/civic-agent-kit"
 Repository = "https://github.com/gabrielmahia/civic-agent-kit"
 PyPI = "https://pypi.org/project/civic-agent-kit/"
+
+[tool.setuptools.package-dir]
+"" = "src"
+
+[tool.setuptools.packages.find]
+where = ["src"]
