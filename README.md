@@ -3,7 +3,7 @@
 > The unified Python toolkit for building civic AI tools in East Africa. One install gives you access to Kenya's parliament records, county budgets, NDMA drought data, M-Pesa payments, and both MCP and A2A protocol integrations.
 
 [![PyPI](https://img.shields.io/pypi/v/civic-agent-kit)](https://pypi.org/project/civic-agent-kit/)
-[![License: CC BY-NC-ND 4.0](https://img.shields.io/badge/License-CC%20BY--NC--ND%204.0-lightgrey.svg)](LICENSE)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![MCP](https://img.shields.io/badge/MCP-Compatible-green)](https://modelcontextprotocol.io)
 [![A2A](https://img.shields.io/badge/A2A-Protocol%200.3-blue)](https://github.com/a2aproject/A2A)
 
@@ -121,4 +121,4 @@ All data from the Kenya Civic Datasets (CC BY-SA 4.0):
 ## IP & Collaboration
 
 © 2026 Gabriel Mahia · [contact@aikungfu.dev](mailto:contact@aikungfu.dev)
-License: CC BY-NC-ND 4.0
+License: MIT
