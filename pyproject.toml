@@ -14,12 +14,6 @@ keywords = [
     "kenya", "africa", "civic-tech", "mcp", "a2a", "parliament",
     "budget", "east-africa", "ai", "agent", "llm", "mpesa"
 ]
-classifiers = [
-    "Programming Language :: Python :: 3",
-    "Operating System :: OS Independent",
-    "Topic :: Scientific/Engineering :: Artificial Intelligence",
-    "Intended Audience :: Developers",
-]
 requires-python = ">=3.10"
 dependencies = [
     "pandas>=2.0.0",
