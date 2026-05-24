@@ -122,3 +122,29 @@ All data from the Kenya Civic Datasets (CC BY-SA 4.0):
 
 © 2026 Gabriel Mahia · [contact@aikungfu.dev](mailto:contact@aikungfu.dev)
 License: MIT
+
+
+## Protocol Coverage — Complete Stack
+
+`civic-agent-kit` now supports all four major AI agent protocols for East Africa:
+
+| Protocol | What it does | Implementation |
+|----------|-------------|----------------|
+| **MCP** | Agent → Tool | [mpesa-mcp](https://github.com/gabrielmahia/mpesa-mcp), [wapimaji-mcp](https://github.com/gabrielmahia/wapimaji-mcp) |
+| **A2A** | Agent → Agent | [kenya-a2a](https://github.com/gabrielmahia/kenya-a2a) |
+| **Google ADK** | Agent orchestration | [kenya-adk](https://github.com/gabrielmahia/kenya-adk) |
+| **AG-UI** | Agent → Frontend | [kenya-agui](https://github.com/gabrielmahia/kenya-agui) |
+
+This makes Gabriel Mahia the first engineer to implement all four protocols for East Africa.
+
+```python
+from civic_agent_kit import CivicAgentKit
+
+# Full protocol stack
+kit = CivicAgentKit(
+    mcp_servers=["mpesa-mcp", "wapimaji-mcp"],  # MCP
+    a2a_registry="kenya-a2a",                    # A2A
+    agui_server="kenya-agui",                    # AG-UI
+    adk_config="kenya-adk",                      # Google ADK
+)
+```
