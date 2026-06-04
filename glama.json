@@ -1,0 +1,119 @@
+{
+  "$schema": "https://glama.ai/mcp/schemas/1.0.0/server.json",
+  "name": "civic-agent-kit",
+  "version": "0.2.0",
+  "description": "MCP server for Kenya civic data \u2014 6 tools covering county drought phases, budget allocation, parliament bills, SACCO registry, constitutional rights (English/Swahili), and the 47 counties list. Part of the East Africa AI infrastructure stack.",
+  "license": "MIT",
+  "homepage": "https://gabrielmahia.github.io",
+  "author": {
+    "name": "Gabriel Mahia",
+    "email": "contact@aikungfu.dev",
+    "url": "https://gabrielmahia.github.io"
+  },
+  "keywords": [
+    "kenya",
+    "civic-tech",
+    "parliament",
+    "budget",
+    "drought",
+    "sacco",
+    "constitution",
+    "mcp",
+    "swahili",
+    "east-africa"
+  ],
+  "tools": [
+    {
+      "name": "kenya_county_drought",
+      "description": "NDMA drought phase for any Kenya county (1=Minimal \u2192 5=Famine). Supports English/Swahili.",
+      "annotations": {
+        "readOnlyHint": true,
+        "destructiveHint": false,
+        "idempotentHint": true
+      }
+    },
+    {
+      "name": "kenya_budget_summary",
+      "description": "County budget allocation, development/recurrent split, absorption rate. FY 2022/23 from Controller of Budget.",
+      "annotations": {
+        "readOnlyHint": true,
+        "destructiveHint": false,
+        "idempotentHint": true
+      }
+    },
+    {
+      "name": "kenya_parliament_bills",
+      "description": "Kenya Parliament bills \u2014 filter by status or keyword. Returns title, status, type, date, summary.",
+      "annotations": {
+        "readOnlyHint": true,
+        "destructiveHint": false,
+        "idempotentHint": true
+      }
+    },
+    {
+      "name": "kenya_sacco_lookup",
+      "description": "SASRA SACCO registry \u2014 search by name or county. Returns membership, assets, type.",
+      "annotations": {
+        "readOnlyHint": true,
+        "destructiveHint": false,
+        "idempotentHint": true
+      }
+    },
+    {
+      "name": "kenya_rights_query",
+      "description": "Kenya constitutional rights from Chapter 4 \u2014 land, water, health, education, labour, housing, food. English and Swahili.",
+      "annotations": {
+        "readOnlyHint": true,
+        "destructiveHint": false,
+        "idempotentHint": true
+      }
+    },
+    {
+      "name": "kenya_counties_list",
+      "description": "List all 47 Kenya counties.",
+      "annotations": {
+        "readOnlyHint": true,
+        "destructiveHint": false,
+        "idempotentHint": true
+      }
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gabrielmahia/civic-agent-kit"
+  },
+  "installation": {
+    "pip": "civic-agent-kit",
+    "uvx": "civic-agent-kit"
+  },
+  "relatedServers": [
+    {
+      "name": "mpesa-mcp",
+      "url": "https://github.com/gabrielmahia/mpesa-mcp",
+      "description": "M-PESA Daraja API MCP server"
+    },
+    {
+      "name": "wapimaji-mcp",
+      "url": "https://github.com/gabrielmahia/wapimaji-mcp",
+      "description": "Kenya water infrastructure MCP"
+    },
+    {
+      "name": "swahili-health-mcp",
+      "url": "https://github.com/gabrielmahia/swahili-health-mcp",
+      "description": "Kenya DHIS2 health data MCP"
+    }
+  ],
+  "maintainers": [
+    "gabrielmahia"
+  ],
+  "envVars": [],
+  "docker": {
+    "buildSteps": [
+      "pip install civic-agent-kit==0.2.0"
+    ],
+    "cmd": [
+      "civic-agent-kit"
+    ],
+    "pythonVersion": "3.11"
+  }
+}
