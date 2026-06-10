@@ -1,4 +1,5 @@
 """Data loaders for Kenya civic datasets."""
+from __future__ import annotations  # lazy annotations: pd.DataFrame safe when pd=None
 try:
     import pandas as pd
     _HAS_PANDAS = True
