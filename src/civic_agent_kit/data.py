@@ -1,5 +1,10 @@
 """Data loaders for Kenya civic datasets."""
-import pandas as pd
+try:
+    import pandas as pd
+    _HAS_PANDAS = True
+except ImportError:
+    pd = None
+    _HAS_PANDAS = False
 from pathlib import Path
 
 _DATA_DIR = Path(__file__).parent.parent.parent / "civic_data"
