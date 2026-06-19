@@ -1,5 +1,8 @@
 # 🛠️ CivicAgentKit — East African Civic AI SDK
 
+[![civic-agent-kit Glama score](https://glama.ai/mcp/servers/gabrielmahia/civic-agent-kit/badges/score.svg)](https://glama.ai/mcp/servers/gabrielmahia/civic-agent-kit)
+
+
 > The unified Python toolkit for building civic AI tools in East Africa. One install gives you access to Kenya's parliament records, county budgets, NDMA drought data, M-Pesa payments, and both MCP and A2A protocol integrations.
 
 [![PyPI](https://img.shields.io/pypi/v/civic-agent-kit)](https://pypi.org/project/civic-agent-kit/)
