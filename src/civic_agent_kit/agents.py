@@ -1,5 +1,4 @@
 """Civic AI agents for East Africa."""
-import os
 from typing import Optional
 
 
