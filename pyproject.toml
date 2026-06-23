@@ -39,3 +39,4 @@ where = ["src"]
 [tool.ruff]
 line-length = 100
 target-version = "0.2.1"
+# build: 1782218508
