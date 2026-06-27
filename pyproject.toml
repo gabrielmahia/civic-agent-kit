@@ -6,6 +6,16 @@ build-backend = "setuptools.build_meta"
 name = "civic-agent-kit"
 version = "0.2.1"
 description = "Python SDK for building civic AI tools across Africa — M-Pesa, parliament, budgets, drought, MCP and A2A"
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+]
 readme = "README.md"
 license = "MIT"
 license-files = ["LICENSE"]
