@@ -139,7 +139,7 @@ License: MIT
 | **Google ADK** | Agent orchestration | [kenya-adk](https://github.com/gabrielmahia/kenya-adk) |
 | **AG-UI** | Agent → Frontend | [kenya-agui](https://github.com/gabrielmahia/kenya-agui) |
 
-This makes Gabriel Mahia the first engineer to implement all four protocols for East Africa.
+Each protocol layer above was implemented within weeks of its global release — because the coordination gaps these tools address don't wait for tooling maturity.
 
 ```python
 from civic_agent_kit import CivicAgentKit
