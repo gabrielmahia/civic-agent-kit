@@ -55,7 +55,6 @@ class BudgetAgent:
     """County budget analysis agent."""
     def analyse(self, county: str, data_path: Optional[str] = None) -> str:
         try:
-            import pandas as pd
             from .data import KenyaBudgetData
             df = KenyaBudgetData.load()
             matches = df[df.apply(lambda r: county.lower() in " ".join(r.astype(str).str.lower()), axis=1)]
