@@ -41,6 +41,10 @@ civic-agent-kit = "civic_agent_kit.server:mcp.run"
 [project.urls]
 Homepage   = "https://github.com/gabrielmahia/civic-agent-kit"
 Repository = "https://github.com/gabrielmahia/civic-agent-kit"
+Documentation = "https://github.com/gabrielmahia/nairobi-stack"
+"MCP Registry" = "https://registry.modelcontextprotocol.io"
+Datasets = "https://huggingface.co/gmahia"
+Evaluation = "https://github.com/gabrielmahia/kipimo"
 
 [tool.setuptools.packages.find]
 where = ["src"]
