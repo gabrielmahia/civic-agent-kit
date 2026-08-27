@@ -1,5 +1,4 @@
 """Civic AI agents for East Africa."""
-from typing import Optional
 
 
 class RightsAgent:
@@ -53,7 +52,7 @@ class DroughtAgent:
 
 class BudgetAgent:
     """County budget analysis agent."""
-    def analyse(self, county: str, data_path: Optional[str] = None) -> str:
+    def analyse(self, county: str, data_path: str | None = None) -> str:
         try:
             from .data import KenyaBudgetData
             df = KenyaBudgetData.load()

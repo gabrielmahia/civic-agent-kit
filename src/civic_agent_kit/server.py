@@ -10,7 +10,9 @@ Tools:
   kenya_counties_list     — All 47 Kenya counties with metadata
 """
 from __future__ import annotations
+
 from typing import Annotated
+
 from fastmcp import FastMCP
 
 mcp = FastMCP(
@@ -240,7 +242,7 @@ def kenya_rights_query(
         return {"right": right, "language": language, "provision": answer, "source": "Constitution of Kenya 2010"}
 
     # List available rights
-    available = list(set(k for k, _ in RIGHTS_DB.keys()))
+    available = list(set(k for k, _ in RIGHTS_DB))
     return {
         "error": f"Right \'{right}\' not found.",
         "available_rights": available,

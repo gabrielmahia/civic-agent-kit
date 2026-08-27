@@ -6,17 +6,17 @@ __version__ = "0.1.0"
 __author__  = "Gabriel Mahia"
 __email__   = "contact@aikungfu.dev"
 
+from .agents import BudgetAgent, DroughtAgent, RightsAgent
 from .data import KenyaBudgetData, KenyaParliamentData, KenyaSACCOData
-from .agents import BudgetAgent, RightsAgent, DroughtAgent
 from .utils import KenyaCounties, KiswahiliTranslator
 
 __all__ = [
+    "BudgetAgent",
+    "DroughtAgent",
     "KenyaBudgetData",
+    "KenyaCounties",
     "KenyaParliamentData",
     "KenyaSACCOData",
-    "BudgetAgent",
-    "RightsAgent",
-    "DroughtAgent",
-    "KenyaCounties",
     "KiswahiliTranslator",
+    "RightsAgent",
 ]
