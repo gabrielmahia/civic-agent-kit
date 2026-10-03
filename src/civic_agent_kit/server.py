@@ -2,10 +2,10 @@
 civic-agent-kit MCP server — Kenya civic data as AI agent tools
 
 Tools:
-  kenya_county_drought    — NDMA drought phase for any county
-  kenya_budget_summary    — County budget allocation and spending data
-  kenya_parliament_bills  — Bills and motions from Kenya Parliament
-  kenya_sacco_lookup      — SACCO registry and financial data
+  kenya_county_drought    — synthetic drought demo for any county
+  kenya_budget_summary    — synthetic county budget demo
+  kenya_parliament_bills  — synthetic parliament-bills demo
+  kenya_sacco_lookup      — synthetic SACCO lookup demo
   kenya_rights_query      — Constitutional rights Q&A (English/Swahili)
   kenya_counties_list     — All 47 Kenya counties with metadata
 """
@@ -111,7 +111,7 @@ def kenya_county_drought(
     """
     Get current NDMA drought phase for any of Kenya\'s 47 counties.
     Phase 1=Minimal, 2=Stressed, 3=Crisis, 4=Emergency, 5=Famine.
-    Data source: Kenya National Drought Management Authority (NDMA).
+    Embedded row-level provenance and as-of date are not recorded.
     DEMO data — for real-time data see ndma.go.ke.
     """
     county_title = county.strip().title()
@@ -143,7 +143,7 @@ def kenya_budget_summary(
 ) -> dict:
     """
     Get county budget allocation, development vs recurrent split, and absorption rate.
-    FY 2022/23 data from Kenya Controller of Budget.
+    Synthetic FY 2022/23-shaped demo data; embedded row-level provenance is not recorded.
     DEMO data — real data: opendata.go.ke and cob.go.ke.
     """
     if county.strip().upper() == "ALL":
@@ -183,7 +183,7 @@ def kenya_parliament_bills(
     keyword: Annotated[str, "Search keyword in bill title or summary"] = "",
 ) -> dict:
     """
-    Query Kenya Parliament bills and their legislative status.
+    Query synthetic/sample parliament-bill records for demonstration.
     Returns bills with title, status, type, date and summary.
     DEMO data — real data: parliament.go.ke.
     """
@@ -206,7 +206,7 @@ def kenya_sacco_lookup(
     county: Annotated[str, "Filter by county"] = "",
 ) -> dict:
     """
-    Look up Kenya SACCOs from the SASRA registry.
+    Look up synthetic/sample SACCO records for demonstration.
     Returns name, type, membership, assets, county and focus sector.
     DEMO data — real registry: sasra.go.ke.
     """
