@@ -115,9 +115,16 @@ print(answer)
 
 ## Data
 
-All data from the Kenya Civic Datasets (CC BY-SA 4.0):
+This package has **two distinct data paths**:
+
+- **File-backed loaders** in `src/civic_agent_kit/data.py`. The county-budget loader points to the Kenya Civic Datasets Kaggle DOI `10.34740/kaggle/dsv/15473045`; the broader dataset is also published on Hugging Face (DOI `10.57967/hf/8223`).
+- **Embedded MCP demo tables** in `src/civic_agent_kit/server.py`. Their original row-level sources and as-of dates were not recorded, so their drought, budget, parliament and SACCO values must be treated as **synthetic/sample data**, not official or current figures.
+
+Dataset surfaces:
 - **Kaggle**: [gmahia/kenya-civic-data](https://kaggle.com/datasets/gmahia/kenya-civic-data-parliament-budget-saccos) — DOI: `10.34740/kaggle/dsv/15473045`
 - **HuggingFace**: [gmahia/kenya-civic-data](https://huggingface.co/datasets/gmahia/kenya-civic-data) — DOI: `10.57967/hf/8223`
+
+See [Data provenance and truthfulness](docs/DATA_PROVENANCE.md) for the exact boundary between sourced files, unprovenanced embedded demo values, and constitutional-rights text.
 
 ## Related packages
 
