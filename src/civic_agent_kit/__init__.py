@@ -2,7 +2,7 @@
 CivicAgentKit — Python SDK for East African civic AI.
 """
 
-__version__ = "0.1.0"
+__version__ = "0.2.3"
 __author__  = "Gabriel Mahia"
 __email__   = "contact@aikungfu.dev"
 
