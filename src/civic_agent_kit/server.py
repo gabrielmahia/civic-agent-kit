@@ -20,7 +20,9 @@ mcp = FastMCP(
     instructions=(
         "Kenya civic data tools. Access county drought data, budget allocations, "
         "parliament bills, SACCO registry, and constitutional rights. "
-        "All tools support English and Kiswahili output."
+        "All tools support English and Kiswahili output. "
+        "The embedded data tables are samples: their sources and as-of dates are not recorded, "
+        "so do not present them as official or current figures."
     ),
 )
 

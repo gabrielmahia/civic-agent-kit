@@ -12,7 +12,7 @@ Install: `pip install civic-agent-kit` · Use with any MCP client.
 ---
 
 
-> The unified Python toolkit for building civic AI tools in East Africa. One install gives you access to Kenya's parliament records, county budgets, NDMA drought data, M-Pesa payments, and both MCP and A2A protocol integrations.
+> The unified Python toolkit for building civic AI tools in East Africa. One install gives you access to Kenya's parliament records, county budgets, embedded sample drought data (sources and as-of dates are not recorded), M-Pesa payments, and both MCP and A2A protocol integrations.
 
 [![PyPI](https://img.shields.io/pypi/v/civic-agent-kit)](https://pypi.org/project/civic-agent-kit/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
@@ -33,12 +33,12 @@ from civic_agent_kit import (
     KenyaBudgetData,       # Controller of Budget — 47 counties
     KenyaParliamentData,   # MPs, bills, CDF — 13th Parliament
     KenyaSACCOData,        # SASRA SACCO registry
-    KenyaDroughtData,      # NDMA drought phases
+    KenyaDroughtData,      # drought phases (sample data; provenance not recorded)
 
     # Agents
     BudgetAgent,           # County budget analysis (CrewAI)
     RightsAgent,           # Constitutional rights Q&A (EN/SW)
-    DroughtAgent,          # Drought + SMS alert agent
+    DroughtAgent,          # DEMO: synthetic drought values + SMS alert agent
 
     # Protocols
     KenyaMCPServer,        # MCP server — wraps all Kenya data as MCP tools

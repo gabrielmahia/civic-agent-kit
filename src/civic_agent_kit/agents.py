@@ -34,7 +34,7 @@ class RightsAgent:
 
 
 class DroughtAgent:
-    """NDMA drought status for Kenya counties."""
+    """DEMO ONLY: synthetic drought values derived from the county name. NOT NDMA data; never present as real."""
     import hashlib as _hashlib
 
     PHASES = {1: "Minimal", 2: "Stressed", 3: "Crisis", 4: "Emergency", 5: "Famine"}
@@ -46,7 +46,8 @@ class DroughtAgent:
             "county": county,
             "phase": h,
             "phase_label": self.PHASES[h],
-            "source": "NDMA Kenya (sandbox)",
+            "is_synthetic": True,
+            "source": "SYNTHETIC DEMO: derived from the county name; NOT NDMA data",
         }
 
 
