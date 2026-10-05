@@ -1,0 +1,64 @@
+{
+  "schema_version": "1.0",
+  "repository": "gabrielmahia/civic-agent-kit",
+  "project": "JICHO / Record of Power incubator",
+  "stable_branch": "main",
+  "integration_branch": "jicho-v0",
+  "purpose": "Provenance-first public-integrity research infrastructure; no automated guilt conclusions.",
+  "cold_start": [
+    "AGENTS.md",
+    "docs/jicho/README.md",
+    "docs/jicho/DOCTRINE.md",
+    "docs/jicho/ARCHITECTURE.md",
+    "docs/jicho/EVIDENCE_MODEL.md",
+    "docs/jicho/BACKTEST_PROTOCOL.md",
+    "docs/jicho/THREAT_MODEL.md",
+    "docs/jicho/AI_COLLABORATION.md"
+  ],
+  "commands": {
+    "jicho_tests": "pytest -q tests/test_jicho.py",
+    "mock_backtest": "python scripts/jicho_mock_backtest.py",
+    "lint": "ruff check . --ignore E501",
+    "full_tests": "pytest tests/ -v --tb=short",
+    "prototype": "cd prototypes/record-of-power && python -m http.server 8000"
+  },
+  "coordination": {
+    "task_registry": "GitHub Issues",
+    "work_claim": "Open draft PR into jicho-v0",
+    "branch_pattern": "agent/<agent-name>/<issue-number>-<slug>",
+    "pr_title_pattern": "[CLAIM #<issue>] <agent-name>: <scope>",
+    "collision_rule": "Do not duplicate an overlapping open PR; review, subdivide, or choose another issue.",
+    "authority": "Tests, source evidence, and reproducible reality; never model consensus."
+  },
+  "current_workstreams": [
+    {
+      "issue": 4,
+      "name": "blind historical backtest harness"
+    },
+    {
+      "issue": 5,
+      "name": "Kenya public-money reconciliation"
+    },
+    {
+      "issue": 6,
+      "name": "public evidence website"
+    }
+  ],
+  "prohibited_autonomous_actions": [
+    "publish real-person allegations",
+    "enable confidential source intake",
+    "change licensing",
+    "merge JICHO into main before backtest gates pass",
+    "deploy real-time precise person tracking",
+    "contact new institutions in maintainer voice",
+    "delete or rewrite historical correction state"
+  ],
+  "epistemic_rules": [
+    "anomaly != wrongdoing",
+    "AI output != evidence",
+    "relationship != causality",
+    "repetition != independent corroboration",
+    "answer confidence != coverage confidence",
+    "preserve exculpatory evidence and corrections"
+  ]
+}
