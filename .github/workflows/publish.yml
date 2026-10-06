@@ -1,28 +1,44 @@
-name: Publish to PyPI
+name: Publish
 
-permissions:
-  contents: read
+# One workflow, in order: test -> PyPI (Trusted Publisher, no token) -> MCP registry.
+# The registry job needs the PyPI job, so it can never publish a version PyPI does not have yet.
+#
+# One-time setup on pypi.org (project -> Manage -> Publishing -> Add a new publisher -> GitHub):
+#   Owner: gabrielmahia   Repository: civic-agent-kit   Workflow name: publish.yml   Environment name: pypi
+# To release: bump the version in pyproject.toml, merge, then push a tag:  git tag vX.Y.Z && git push origin vX.Y.Z
 
 on:
   push:
-    tags:
-      - "v*"
+    tags: ["v*"]
   workflow_dispatch:
 
 jobs:
-  publish:
+  test:
+    name: Test before publish
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v7
-
-      - uses: actions/setup-python@v7
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
+      - run: pip install -e . pytest
+      - run: python -m pytest tests -q
 
-      - run: pip install build
-
-      - run: python -m build
-
+  pypi:
+    name: Build and publish to PyPI
+    needs: test
+    runs-on: ubuntu-latest
+    environment:
+      name: pypi
+      url: https://pypi.org/p/civic-agent-kit
+    permissions:
+      id-token: write   # Trusted Publisher (OIDC): no API token is stored anywhere
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install build && python -m build
       - uses: pypa/gh-action-pypi-publish@release/v1
         with:
-          password: ${{ secrets.PYPI_UPDATED }}
+          skip-existing: true   # a re-run, or a version uploaded by hand, does not fail
