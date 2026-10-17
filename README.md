@@ -4,12 +4,8 @@
 [![smithery badge](https://smithery.ai/badge/@gabrielmahia/civic-agent-kit)](https://smithery.ai/server/@gabrielmahia/civic-agent-kit)
 
 
----
-**Compatible with `claude-sonnet-5`** (released 2026-06-30) — Anthropic's most agentic
-Sonnet yet. Runs multi-step tool chains end-to-end without stopping short.
 Install: `pip install civic-agent-kit` · Use with any MCP client.
 
----
 
 
 > The unified Python toolkit for building civic AI tools in East Africa. One install gives you access to Kenya's parliament records, county budgets, embedded sample drought data (sources and as-of dates are not recorded), M-Pesa payments, and both MCP and A2A protocol integrations.
@@ -168,13 +164,13 @@ kit = CivicAgentKit(
 )
 ```
 
-<!-- interconnect:v1 -->
+<!-- interconnect:v2 -->
 ## Part of the East Africa coordination stack
 
-- **Install & run:** `pip install reli-cli && reli list` — 33 MCP servers on the [official MCP Registry](https://registry.modelcontextprotocol.io) under `io.github.gabrielmahia`
+- **Install & run:** `pip install reli-cli && reli list` — the MCP servers on the [official MCP Registry](https://registry.modelcontextprotocol.io) under `io.github.gabrielmahia`
 - **Evaluate any model on Swahili agent tasks:** [kipimo](https://github.com/gabrielmahia/kipimo) · [dataset](https://huggingface.co/datasets/gmahia/kipimo) · [leaderboard](https://huggingface.co/spaces/gmahia/kipimo-leaderboard)
 - **Coordinate across servers:** [africa-coord-bus](https://pypi.org/project/africa-coord-bus/) — offline-first event bus with a built-in Kenya routing table
 - **Datasets:** [huggingface.co/gmahia](https://huggingface.co/gmahia) · **Docs hub:** [nairobi-stack](https://github.com/gabrielmahia/nairobi-stack)
 
 Model-agnostic by design: closed APIs, open-weight models, and small distilled models are all first-class citizens.
-<!-- /interconnect:v1 -->
+<!-- /interconnect:v2 -->
