@@ -1,8 +1,8 @@
 {
   "$schema": "https://glama.ai/mcp/schemas/1.0.0/server.json",
   "name": "civic-agent-kit",
-  "version": "0.2.0",
-  "description": "MCP server for Kenya civic data \u2014 6 tools covering county drought phases, budget allocation, parliament bills, SACCO registry, constitutional rights (English/Swahili), and the 47 counties list. Part of the East Africa AI infrastructure stack.",
+  "version": "0.2.4",
+  "description": "MCP server for Kenya civic data — 6 tools covering county drought phases, budget allocation, parliament bills, SACCO registry, constitutional rights (English/Swahili), and the 47 counties list. Part of the East Africa AI infrastructure stack.",
   "license": "MIT",
   "homepage": "https://gabrielmahia.github.io",
   "author": {
@@ -34,7 +34,7 @@
   "tools": [
     {
       "name": "kenya_county_drought",
-      "description": "NDMA drought phase for any Kenya county (1=Minimal \u2192 5=Famine). Supports English/Swahili.",
+      "description": "NDMA drought phase for any Kenya county (1=Minimal → 5=Famine). Supports English/Swahili.",
       "annotations": {
         "readOnlyHint": true,
         "destructiveHint": false,
@@ -52,7 +52,7 @@
     },
     {
       "name": "kenya_parliament_bills",
-      "description": "Kenya Parliament bills \u2014 filter by status or keyword. Returns title, status, type, date, summary.",
+      "description": "Kenya Parliament bills — filter by status or keyword. Returns title, status, type, date, summary.",
       "annotations": {
         "readOnlyHint": true,
         "destructiveHint": false,
@@ -61,7 +61,7 @@
     },
     {
       "name": "kenya_sacco_lookup",
-      "description": "SASRA SACCO registry \u2014 search by name or county. Returns membership, assets, type.",
+      "description": "SASRA SACCO registry — search by name or county. Returns membership, assets, type.",
       "annotations": {
         "readOnlyHint": true,
         "destructiveHint": false,
@@ -70,7 +70,7 @@
     },
     {
       "name": "kenya_rights_query",
-      "description": "Kenya constitutional rights from Chapter 4 \u2014 land, water, health, education, labour, housing, food. English and Swahili.",
+      "description": "Kenya constitutional rights from Chapter 4 — land, water, health, education, labour, housing, food. English and Swahili.",
       "annotations": {
         "readOnlyHint": true,
         "destructiveHint": false,
