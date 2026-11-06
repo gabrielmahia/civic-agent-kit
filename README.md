@@ -1,12 +1,8 @@
 # 🛠️ CivicAgentKit — East African Civic AI SDK
 
 [![civic-agent-kit Glama score](https://glama.ai/mcp/servers/gabrielmahia/civic-agent-kit/badges/score.svg)](https://glama.ai/mcp/servers/gabrielmahia/civic-agent-kit)
-[![smithery badge](https://smithery.ai/badge/@gabrielmahia/civic-agent-kit)](https://smithery.ai/server/@gabrielmahia/civic-agent-kit)
-
 
 Install: `pip install civic-agent-kit` · Use with any MCP client.
-
-
 
 > The unified Python toolkit for building civic AI tools in East Africa. One install gives you access to Kenya's parliament records, county budgets, embedded sample drought data (sources and as-of dates are not recorded), M-Pesa payments, and both MCP and A2A protocol integrations.
 
@@ -137,7 +133,6 @@ See [Data provenance and truthfulness](docs/DATA_PROVENANCE.md) for the exact bo
 
 © 2026 Gabriel Mahia · [contact@aikungfu.dev](mailto:contact@aikungfu.dev)
 License: MIT
-
 
 ## Protocol Coverage — Complete Stack
 
