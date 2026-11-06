@@ -1,7 +1,7 @@
 {
   "$schema": "https://glama.ai/mcp/schemas/1.0.0/server.json",
   "name": "civic-agent-kit",
-  "version": "0.2.5",
+  "version": "0.2.6",
   "description": "MCP server for Kenya civic data — 6 tools covering county drought phases, budget allocation, parliament bills, SACCO registry, constitutional rights (English/Swahili), and the 47 counties list. Part of the East Africa AI infrastructure stack.",
   "license": "MIT",
   "homepage": "https://gabrielmahia.github.io",
