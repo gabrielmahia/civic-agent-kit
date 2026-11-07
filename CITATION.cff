@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+type: software
+title: "civic-agent-kit"
+abstract: "Python SDK for building civic AI tools across Africa — M-Pesa, parliament, budgets, drought, MCP and A2A"
+version: "0.2.6"
+authors:
+  - family-names: "Mahia"
+    given-names: "Gabriel"
+repository-code: "https://github.com/gabrielmahia/civic-agent-kit"
+license: "MIT"
