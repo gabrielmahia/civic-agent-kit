@@ -39,6 +39,6 @@ jobs:
         with:
           python-version: "3.12"
       - run: pip install build && python -m build
-      - uses: pypa/gh-action-pypi-publish@release/v1
+      - uses: pypa/gh-action-pypi-publish@7245906fb61fa33a13554f9d5fb856fe61758086  # v1.14.3 (release/v1 on 2026-11-10)
         with:
           skip-existing: true   # a re-run, or a version uploaded by hand, does not fail
